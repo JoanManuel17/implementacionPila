@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="384.0" prefWidth="459.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllerUI.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="197.0" layoutY="335.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <WebView fx:id="idWeb" layoutX="29.0" layoutY="42.0" prefHeight="278.0" prefWidth="401.0" />
+    </children>
+</AnchorPane>
