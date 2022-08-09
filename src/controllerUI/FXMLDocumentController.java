@@ -29,8 +29,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private WebView idWeb;
     
-    @FXML
-    private TextArea idtextArea;
     
     WebEngine wegEngine;
     Pila<Productos> pilaP;
