@@ -16,6 +16,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import modelo.Pila;
+import modelo.Tools;
 
 /**
  *
@@ -37,6 +38,12 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
+        
+        Productos objP = new Productos("", 0, 0);
+        pilaP.apilar(objP);
+        
+        String mostrarPila = Tools.convertirPilaAHtml(pilaP);
+        
     }
     
     @Override
