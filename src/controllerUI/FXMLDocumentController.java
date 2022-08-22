@@ -43,7 +43,7 @@ public class FXMLDocumentController implements Initializable {
         pilaP.apilar(objP);
         
         String mostrarPila = Tools.convertirPilaAHtml(pilaP);
-         
+        wegEngine.loadContent(mostrarPila);
     }
     
     @Override
@@ -51,7 +51,7 @@ public class FXMLDocumentController implements Initializable {
         // TODO
         wegEngine = idWeb.getEngine();
         pilaP = new Pila();
-        wegEngine.load("https://www.google.com");
+        wegEngine.load("pilaP");
     }    
     
 }
