@@ -12,7 +12,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import modelo.Pila;
@@ -30,7 +29,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private WebView idWeb;
     
-    
     WebEngine wegEngine;
     Pila<Productos> pilaP;
     
@@ -39,7 +37,7 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
         
-        Productos objP = new Productos("", 0, 0);
+        Productos objP = new Productos();
         pilaP.apilar(objP);
         
         String mostrarPila = Tools.convertirPilaAHtml(pilaP);
@@ -53,5 +51,4 @@ public class FXMLDocumentController implements Initializable {
         pilaP = new Pila();
         wegEngine.load("pilaP");
     }    
-    
 }

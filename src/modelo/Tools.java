@@ -2,15 +2,12 @@ package modelo;
 
 import datos.Productos;
 
-
-
 /**
  *
- * @author 
+ * @author JOAN
  */
 public class Tools
 {
-
     /**
      * Metodo que recibe una pila y convierte su contenido en un documento en formato
      * HTML para su posterior visualización.
@@ -30,7 +27,7 @@ public class Tools
         if (!q.estaVacia())
         {
             sb.append("<table align=\"center\" border=\"2\">");
-            sb.append("<tr>").append("<th>").append("Texto").append("</th>").append("</tr>");
+            sb.append("<tr>").append("<th>").append("Pila").append("</th>").append("</tr>");
             do
             {
                 Productos e = q.desapilar();
